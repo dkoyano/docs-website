@@ -479,7 +479,7 @@ When viewing an open or closed incident, violations and incidents are marked as 
 
 ### Mute faceted results using `tags.` [#facet-muting]
 
-To mute results of faceted queries, use the `tags.FACETED_ATTRIBUTE` attribute, where <var>FACETED_ATTRIBUTE</var> represents the attributed you've run a NRQL [`FACET` query](/docs/query-data/nrql-new-relic-query-language/getting-started/nrql-syntax-clauses-functions#sel-facet) on. For example: if your NRQL alert condition includes `FACET host` in its query, you can target that `FACET` attribute using `tags.host`.
+To mute results of faceted queries, use the `tags.FACETED_ATTRIBUTE` attribute, where <var>FACETED_ATTRIBUTE</var> represents the attribute you've run a NRQL [`FACET` query](/docs/query-data/nrql-new-relic-query-language/getting-started/nrql-syntax-clauses-functions#sel-facet) on. For example: if your NRQL alert condition includes `FACET host` in its query, you can target that `FACET` attribute using `tags.host`.
 
 NRQL condition queries can accept multiple facet attributes. If you want to be able to filter from attributes in your events or metric time series that have been aggregated, you must add those attributes to your NRQL query `FACET` clause; for example: `FACET host, region, cluster`.
 
