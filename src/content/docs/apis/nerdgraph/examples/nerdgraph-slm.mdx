@@ -82,7 +82,7 @@ It contains these fields:
 * **`objectives`**: An array of objectives (SLOs) for the SLI.
   * `target`: The target for your SLO, up to 100.00. The field supports up to 5 decimals.
     * If your users are happy with the current experience, set the SLO percentage to match the current baseline. For instance, the percentile used to determine the SLI's good events.
-  * `timeWindow.rolling.count`: The length of the period taken into consideration to calculate the SLO. The supported values are `1`, `7`, `14`, `28`, and `30`.
+  * `timeWindow.rolling.count`: The length of the period taken into consideration to calculate the SLO. The supported values are `1`, `7`, `14` and `28`.
   * `timeWindow.rolling.unit`: `DAY`is the supported value.
 
 ## Retrieve the configuration of an SLI for an APM service [#retrieve-config]
